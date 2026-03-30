@@ -1,10 +1,16 @@
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+
 const ADDITIONAL_PADDING = 30; //px
 
 let menu, menuInitHeight;
 let navbar, navbarHeight;
 let lastWidth, currentWidth;
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     menu = document.querySelector('.navbar-links');
     navbar = document.querySelector('.nav-wrapper');
 
@@ -16,6 +22,17 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.style.height = 0;
 
     menu.style.border = 'none';
+
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute("href");
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
 })
 
 window.addEventListener('resize', () => {

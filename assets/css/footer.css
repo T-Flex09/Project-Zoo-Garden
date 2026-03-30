@@ -79,7 +79,7 @@ footer {
   }
   
   .copyright-text p::after {
-    content: "©2025";
+    content: "©2026";
     visibility: visible;
     position: absolute;
     left: 0;

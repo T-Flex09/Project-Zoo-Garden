@@ -1,7 +1,7 @@
 let dropdown_menu;
 const storageLanguageEntry = {'language': 'ro'};
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     dropdown_menu = document.querySelector('.language-dropdown');
 
     handleStorage(storageLanguageEntry); // create localstorage entry if missing
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let entryKey = Object.keys(storageLanguageEntry)[0];
     let storageLang = localStorage.getItem(entryKey);
 
-    console.log(window.location.pathname, pathArr, storageLang, '/en/' + pathArr[pathArr.length - 1]);
+    // console.log(window.location.pathname, pathArr, storageLang, '/en/' + pathArr[pathArr.length - 1]);
     if (!pathArr.includes('en') && storageLang == 'en') 
         window.location.pathname = '/en/' + pathArr[pathArr.length - 1];
     

@@ -14,6 +14,20 @@
   --tooltip-color: #f9c0ff;
 }
 
+:root.dark-mode {
+  --primary: #d1c3e6;
+  --bg-light: #5b1dc3;
+  --primary-gradient: linear-gradient(to right, #ba12aa, #d1c3e6);
+  --light-text-color: #000;
+  --dark-text-color: #fff;
+  --card-background: #7b28ae;
+  --team-photo-bg: #7b3de3;
+  --navbar-bg: linear-gradient(to right, #5b1dc380, #5b1dc340);
+  --results-icons: brightness(0) invert(1);
+  --shadow-color: #000;
+  --tooltip-color: #31106a;
+}
+
 #theme-toggle {
   margin-top: 0.4em;
 }

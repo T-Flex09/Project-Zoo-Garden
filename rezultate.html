@@ -50,51 +50,7 @@
   </head>
   <body class="custom-bg" id="top">
     <!-- Navbar -->
-    <div class = 'center-wrapper'>
-      <div class = 'nav-wrapper'>
-        <!-- Custom element blur effect for navbar, prevents conflict with effects of children nodes -->
-        <div class = 'navbar-blur-wrapper'></div>
-
-        <div class = 'logo-wrapper'>
-          <a href=".">
-            <img class="nav-logo" src="assets/images/Branding Zenith/Sigla_mov.png"/>
-          </a>
-        </div>
-        <div class = 'buttons-wrapper d-flex nowrap justify-content-center align-items-center' style = 'gap: 1em;'>
-          <div style = 'position: relative;'>
-            <a class = 'language-btn' onclick = 'toggle_dropdown()'>
-              <img src = 'assets/images/Flags/Flag_RO.svg' alt = 'RO' width = '30px'>
-              <svg class="arr_menu" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <div class = 'language-dropdown'>
-              <a class = 'lang-link' onclick = 'changelang("ro", "rezultate.html")'>
-                <img src = 'assets/images/Flags/Flag_RO.svg' alt = 'RO' width = '30px'>
-              </a>
-              <a class = 'lang-link' onclick = 'changelang("en", "/en/rezultate.html")'>
-                <img src = 'assets/images/Flags/Flag_EN.svg' alt = 'EN' width = '30px'>
-              </a>
-            </div>
-          </div>
-  
-          <div class="navbar-links">
-            <a class="nav-link" href="index.html">Acasă</a>
-            <a class="nav-link" href="echipa.html">Echipă</a>
-            <a class="nav-link" href="blog.html">Activitate</a>
-            <a class="nav-link active" href="rezultate.html">Rezultate</a>
-            <a class="nav-link" href="sponsori.html">Sponsori</a>
-            <a class="nav-link" href="galerie.html">Galerie</a>
-            <a class="nav-link" href="formular.html">Contact</a>
-          </div>
-          <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
-            <i id="theme-icon"></i>
-          </button>
-          <div class="navbar-toggler-button" onclick = 'dropdown_nav()'><span style = 'font-size: 2.2em;'>&#8801;</span></div>
-        </div>
-      </div>
-    </div>
+    <div id="navbar-placeholder"></div>
 
     <!-- Statistici -->
     <div class="cards">
@@ -406,64 +362,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-      <div class="footerContainer">
-        <div class="footer-logo"></div>
-        <div class="copyright-text">
-        </div>
-        <div class="d-flex justify-content-center align-items-center" style="width: 40%;">
-          <div class="socialIcons">
-            <a
-              href="https://www.instagram.com/zenith.cngm"
-              target="_blank"
-            >
-              <i class="bi bi-instagram me-1"></i>
-            </a>
-            <a
-              href="https://www.tiktok.com/@zenith.cngm"
-              target="_blank"
-            >
-              <i class="bi bi-tiktok me-1"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@Zenith-CNGM"
-              target="_blank"
-            >
-              <i class="bi bi-youtube me-1"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/share/14nknGnpCt/"
-              target="_blank"
-            >
-              <i class="bi bi-facebook me-1"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/clubul-de-robotic%C4%83-zenith-664100370/"
-              target="_blank"
-            >
-              <i class="bi bi-linkedin me-1"></i>
-            </a>
-            <a
-              href="https://linktr.ee/zenith.cngm"
-              target="_blank"
-            >
-            <div class="linktree-icon"></div>
-            </a>
-            <!-- Buton scos temporar
-            <a
-              href="https://hartaedu.ro/inovatie/clubul-de-robotica-zenith-are-nevoie-de-echipament-pentru-participarea-la-concursul-international-de-robotica-first-tech-challenge/ "
-              class="d-inline-block mb-3"
-              target="_blank"
-            >
-              <span class="badge bg-light text-dark fs-6 p-2">
-                <i class="bi bi-cash-stack"></i> Sustine-ne
-              </span>
-            </a>
-            -->
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- Back to top btn -->
     <div id="progress">

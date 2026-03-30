@@ -1,0 +1,45 @@
+<div class = 'center-wrapper'>
+    <div class = 'nav-wrapper'>
+        <!-- Custom element blur effect for navbar, prevents conflict with effects of children nodes -->
+        <div class = 'navbar-blur-wrapper'></div>
+    
+        <div class = 'logo-wrapper'>
+            <a href=".">
+                <img class="nav-logo" src="../assets/images/Branding Zenith/Sigla_mov.png"/>
+            </a>
+        </div>
+        <div class = 'buttons-wrapper d-flex nowrap justify-content-center align-items-center' style = 'gap: 1em;'>
+            <div style = 'position: relative;'>
+            <a class = 'language-btn' onclick = 'toggle_dropdown()'>
+                <img src = '../assets/images/Flags/Flag_EN.svg' alt = 'EN' width = '30px'>
+                <svg class="arr_menu" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class = 'language-dropdown'>
+                <a class = 'lang-link' onclick = 'changelang("ro", "formular.html")'>
+                <img src = '../assets/images/Flags/Flag_RO.svg' alt = 'RO' width = '30px'>
+                </a>
+                <a class = 'lang-link' onclick = 'changelang("en", "/en/formular.html")'>
+                <img src = '../assets/images/Flags/Flag_EN.svg' alt = 'EN' width = '30px'>
+                </a>
+            </div>
+        </div>
+
+        <div class="navbar-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="echipa.html">Team</a>
+            <a class="nav-link" href="blog.html">Activity</a>
+            <a class="nav-link" href="rezultate.html">Results</a>
+            <a class="nav-link" href="sponsori.html">Sponsors</a>
+            <a class="nav-link" href="galerie.html">Gallery</a>
+            <a class="nav-link" href="formular.html">Contact us</a>
+        </div>
+        <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
+            <i id="theme-icon"></i>
+        </button>
+        <div class="navbar-toggler-button" onclick = 'dropdown_nav()'><span style = 'font-size: 2.2em;'>&#8801;</span></div>
+        </div>
+    </div>
+</div>
