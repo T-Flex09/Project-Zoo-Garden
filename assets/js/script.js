@@ -42,7 +42,7 @@ if (path.includes('/en')) {
 }
 
 //Generate dynamic content
-document.addEventListener('load', () => {
+window.addEventListener('load', () => {
   const container = document.getElementById("dynamic-content");
 
   plansData.forEach(plan => {
